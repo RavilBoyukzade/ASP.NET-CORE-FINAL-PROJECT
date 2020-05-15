@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET-CORE-FINAL-PROJECT", "ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT.csproj", "{A6E0455D-5347-40DB-997E-C3B7C7C6A65B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NET-CORE-FINAL-PROJECT", "ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT.csproj", "{A6E0455D-5347-40DB-997E-C3B7C7C6A65B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{3C5A546E-28CB-4DB2-8663-9EDD811F1C55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A6E0455D-5347-40DB-997E-C3B7C7C6A65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6E0455D-5347-40DB-997E-C3B7C7C6A65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6E0455D-5347-40DB-997E-C3B7C7C6A65B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C5A546E-28CB-4DB2-8663-9EDD811F1C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5A546E-28CB-4DB2-8663-9EDD811F1C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5A546E-28CB-4DB2-8663-9EDD811F1C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5A546E-28CB-4DB2-8663-9EDD811F1C55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

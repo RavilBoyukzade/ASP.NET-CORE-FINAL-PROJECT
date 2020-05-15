@@ -5,4 +5,8 @@
     <RootNamespace>ASP.NET_CORE_FINAL_PROJECT</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+  </ItemGroup>
+
 </Project>
