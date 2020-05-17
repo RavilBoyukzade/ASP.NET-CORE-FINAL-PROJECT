@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ASP.NET_CORE_FINAL_PROJECT</title>
+    <title>@ViewData["Title"] - Jotex</title>
+
+
     <link href="~/css/themify-icons.css" rel="stylesheet">
     <link href="~/css/flaticon.css" rel="stylesheet">
     <link href="~/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +19,7 @@
     <link href="~/css/odometer-theme-default.css" rel="stylesheet">
     <link href="~/css/jquery.fancybox.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet">
+    @RenderSection("Head", required: false)
 </head>
 <body>
 
@@ -181,11 +184,11 @@
             </div><!-- end of container -->
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    
+        
             @RenderBody()
-        </main>
-    </div>
+        
+    
 
     <!-- start site-footer -->
     <footer class="site-footer">
@@ -299,9 +302,17 @@
         </div>
     </footer>
     <!-- end site-footer -->
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Modals", required: false)
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <!-- Plugins for this template -->
+    <script src="~/js/jquery-plugin-collection.js"></script>
+
+    <!-- Custom script for this template -->
+    <script src="~/js/script.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
