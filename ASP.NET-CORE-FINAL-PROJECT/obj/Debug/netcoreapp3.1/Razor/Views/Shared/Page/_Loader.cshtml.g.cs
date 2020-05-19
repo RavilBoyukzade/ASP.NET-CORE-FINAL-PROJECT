@@ -27,7 +27,7 @@ using ASP.NET_CORE_FINAL_PROJECT.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ced782d06c2855b66076015bc076240db86cc500", @"/Views/Shared/Page/_Loader.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"11d849148855dfabaecfec700fe6c218ae9a35bf", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e17d48e284efa12418275d66e53a2dbd850f7664", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Page__Loader : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
