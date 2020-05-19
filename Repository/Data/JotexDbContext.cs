@@ -27,5 +27,6 @@ namespace Repository.Data
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial>Testimonials { get; set; }
         public DbSet<Brand> Brands { get; set; }
+        public DbSet <SliderItem> SliderItems { get; set; }
     }
 }

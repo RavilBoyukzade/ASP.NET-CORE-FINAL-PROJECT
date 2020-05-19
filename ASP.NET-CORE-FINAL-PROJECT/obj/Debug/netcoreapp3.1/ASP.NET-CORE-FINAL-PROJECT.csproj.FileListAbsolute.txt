@@ -138,8 +138,6 @@ C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\bi
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\ASP.NET-CORE-FINAL-PROJECT.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\ASP.NET-CORE-FINAL-PROJECT.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\AboutUs\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Service\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\CaseStudies\Index.cshtml.g.cs
@@ -148,3 +146,4 @@ C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\ob
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Page\_Loader.cshtml.g.cs
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Page\_Title.cshtml.g.cs
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Index.cshtml.g.cs
+C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\bin\Debug\netcoreapp3.1\AutoMapper.dll
