@@ -16,6 +16,11 @@ namespace Repository.Repositories.ContentRepository
             _context = context;
         }
 
+        public IEnumerable<Brand> GetBrands()
+        {
+            return _context.Brands.OrderByDescending(b => b.AddedDate).ToList();
+        }
+
         public IEnumerable<SliderItem> GetSliderItems()
         {
             return _context.SliderItems.Where(s => s.Status)

@@ -10,6 +10,7 @@ namespace ASP.NET_CORE_FINAL_PROJECT.Mapping
         {
             CreateMap<Agent, AgentViewModel>();
             CreateMap<SliderItem, SliderItemViewModel>();
+            CreateMap<Brand, BrandViewModel>();
         }
     }
 }

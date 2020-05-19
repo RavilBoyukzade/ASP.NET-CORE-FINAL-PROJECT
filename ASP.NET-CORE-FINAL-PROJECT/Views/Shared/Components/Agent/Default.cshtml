@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<AgentViewModel>
+
 <!-- start agents-section -->
 <section class="agents-section p-b-0 section-padding">
     <div class="container">
@@ -14,14 +15,14 @@
                             <div class="info">
                                 <h3>88123475754</h3>
                                 <h4>demo@example.com</h4>
-                                <a href="#" class="theme-btn">More About Us</a>
+                                <a href="#" class="theme-btn">More about us</a>
                             </div>
                         </div>
                         @foreach (var item in Model)
                         {
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="url(uploads/@item.Photo)" alt="">
+                                    <img src="uploads/@item.Photo" alt="">
                                 </div>
                                 <div class="agent-info">
                                     <h4>@item.FullName</h4>
