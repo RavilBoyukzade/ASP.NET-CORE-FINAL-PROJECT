@@ -1,0 +1,15 @@
+﻿@model IEnumerable<FaqViewModel>
+
+@foreach (var item in Model)
+{
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true">@item.Question</a>
+        </div>
+        <div id="collapse-1" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p>@item.Answer </p>
+            </div>
+        </div>
+    </div>
+}

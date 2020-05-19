@@ -8,7 +8,7 @@ namespace Repository.Models
         [MaxLength(100)]
         public string Question { get; set; }
         [Required]
-        [MaxLength(200)]
+        [MaxLength(500)]
         public string Answer { get; set; }
     }
 }
