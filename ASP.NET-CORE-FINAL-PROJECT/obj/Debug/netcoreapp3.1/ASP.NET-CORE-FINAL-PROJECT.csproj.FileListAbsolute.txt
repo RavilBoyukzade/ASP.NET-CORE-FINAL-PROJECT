@@ -154,3 +154,5 @@ C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\ob
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Agent\Default.cshtml.g.cs
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Brand\Default.cshtml.g.cs
 C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Faq\Default.cshtml.g.cs
+C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Testimonial\Default.cshtml.g.cs
+C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Area\Default.cshtml.g.cs

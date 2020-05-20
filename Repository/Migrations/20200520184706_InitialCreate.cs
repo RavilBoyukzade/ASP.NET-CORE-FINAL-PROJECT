@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Repository.Migrations
 {
-    public partial class CreateDatabase : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -148,7 +148,7 @@ namespace Repository.Migrations
                     AddedBy = table.Column<string>(maxLength: 50, nullable: true),
                     ModifiedBy = table.Column<string>(maxLength: 50, nullable: true),
                     Question = table.Column<string>(maxLength: 100, nullable: false),
-                    Answer = table.Column<string>(maxLength: 200, nullable: false)
+                    Answer = table.Column<string>(maxLength: 500, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -220,6 +220,29 @@ namespace Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "SliderItems",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Status = table.Column<bool>(nullable: false),
+                    AddedDate = table.Column<DateTime>(nullable: false),
+                    ModifiedDate = table.Column<DateTime>(nullable: false),
+                    AddedBy = table.Column<string>(maxLength: 50, nullable: true),
+                    ModifiedBy = table.Column<string>(maxLength: 50, nullable: true),
+                    OrderBy = table.Column<int>(nullable: false),
+                    Title = table.Column<string>(maxLength: 200, nullable: false),
+                    Slogan = table.Column<string>(maxLength: 200, nullable: false),
+                    Image = table.Column<string>(maxLength: 100, nullable: false),
+                    ActionText = table.Column<string>(maxLength: 50, nullable: false),
+                    EndPoint = table.Column<string>(maxLength: 200, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SliderItems", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Testimonials",
                 columns: table => new
                 {
@@ -230,7 +253,6 @@ namespace Repository.Migrations
                     ModifiedDate = table.Column<DateTime>(nullable: false),
                     AddedBy = table.Column<string>(maxLength: 50, nullable: true),
                     ModifiedBy = table.Column<string>(maxLength: 50, nullable: true),
-                    Title = table.Column<string>(maxLength: 50, nullable: false),
                     Text = table.Column<string>(maxLength: 100, nullable: false),
                     Name = table.Column<string>(maxLength: 50, nullable: false),
                     Position = table.Column<string>(maxLength: 50, nullable: false)
@@ -471,6 +493,9 @@ namespace Repository.Migrations
 
             migrationBuilder.DropTable(
                 name: "ServiceSpecs");
+
+            migrationBuilder.DropTable(
+                name: "SliderItems");
 
             migrationBuilder.DropTable(
                 name: "SocialMedias");

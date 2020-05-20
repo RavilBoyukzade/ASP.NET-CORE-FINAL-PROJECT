@@ -2,27 +2,27 @@
 
 namespace Repository.Migrations
 {
-    public partial class ChangeMaxLengthInFaqForAnswer : Migration
+    public partial class TestimonialUpdate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Answer",
-                table: "Faqs",
+                name: "Text",
+                table: "Testimonials",
                 maxLength: 500,
                 nullable: false,
                 oldClrType: typeof(string),
-                oldType: "nvarchar(200)",
-                oldMaxLength: 200);
+                oldType: "nvarchar(100)",
+                oldMaxLength: 100);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Answer",
-                table: "Faqs",
-                type: "nvarchar(200)",
-                maxLength: 200,
+                name: "Text",
+                table: "Testimonials",
+                type: "nvarchar(100)",
+                maxLength: 100,
                 nullable: false,
                 oldClrType: typeof(string),
                 oldMaxLength: 500);

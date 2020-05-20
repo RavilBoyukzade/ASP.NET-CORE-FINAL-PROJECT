@@ -1,4 +1,5 @@
-﻿using Repository.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository.Data;
 using Repository.Models;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ namespace Repository.Repositories.ContentRepository
             _context = context;
         }
 
+       
+
         public IEnumerable<Brand> GetBrands()
         {
             return _context.Brands.OrderByDescending(b => b.AddedDate).ToList();
@@ -26,6 +29,11 @@ namespace Repository.Repositories.ContentRepository
             return _context.SliderItems.Where(s => s.Status)
                                        .OrderBy(s => s.OrderBy)
                                        .ToList();
+        }
+
+        public IEnumerable<Testimonial> GetTestimonials()
+        {
+            return _context.Testimonials.OrderByDescending(t => t.AddedDate).ToList();
         }
     }
 }

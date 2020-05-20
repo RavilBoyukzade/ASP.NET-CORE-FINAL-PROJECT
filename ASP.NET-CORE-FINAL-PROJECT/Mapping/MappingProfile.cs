@@ -12,6 +12,7 @@ namespace ASP.NET_CORE_FINAL_PROJECT.Mapping
             CreateMap<SliderItem, SliderItemViewModel>();
             CreateMap<Brand, BrandViewModel>();
             CreateMap<Faq, FaqViewModel>();
+            CreateMap<Testimonial, TestimonialViewModel>();
         }
     }
 }

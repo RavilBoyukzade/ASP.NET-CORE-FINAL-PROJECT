@@ -7,9 +7,7 @@ namespace Repository.Models
 {
     public class Area : BaseEntity
     {
-        [Required]
-        [MaxLength(50)]
-        public string Title { get; set; }
+       
         [Required]
         [MaxLength(100)]
         public string Text { get; set; }

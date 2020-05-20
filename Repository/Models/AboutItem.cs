@@ -29,6 +29,5 @@ namespace Repository.Models
 
         public ICollection<CounterItem> Counters { get; set; }
         public ICollection<Setting> Settings { get; set; }
-        public ICollection<AboutCard> Cards { get; set; }
     }
 }
