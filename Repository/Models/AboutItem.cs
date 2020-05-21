@@ -28,6 +28,5 @@ namespace Repository.Models
         public string Image { get; set; }
 
         public ICollection<CounterItem> Counters { get; set; }
-        public ICollection<Setting> Settings { get; set; }
     }
 }

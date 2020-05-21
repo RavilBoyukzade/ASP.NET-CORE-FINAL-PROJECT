@@ -5,8 +5,9 @@ namespace Repository.Models
    public class Setting : BaseEntity
     {
         [Required]
-        [MaxLength(50)]
         public string Logo { get; set; }
+        [Required]
+        public string FooterLogo { get; set; }
         [Required]
         [MaxLength(100)]
         public string Adress { get; set; }
@@ -25,11 +26,6 @@ namespace Repository.Models
         [Required]
         [MaxLength(50)]
         public string OfficeTime { get; set; } 
-
-
-        public Agent Agent { get; set; }
-        public AboutItem AboutItem { get; set; }
-        public ICollection<SocialMedia> Medias { get; set; }
        
     }
 }

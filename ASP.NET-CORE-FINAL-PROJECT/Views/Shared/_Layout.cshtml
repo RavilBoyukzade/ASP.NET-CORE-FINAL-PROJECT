@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model SettingViewModel
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -30,8 +31,8 @@
                     <div class="col col-md-8">
                         <div class="info">
                             <ul>
-                                <li><i class="ti-location-pin"></i> 22/1 Rokon uddin sorok mistripara, Austr</li>
-                                <li><i class="ti-timer"></i> Mon - Sun 9.00am - 5 pm</li>
+                                <li><i class="ti-location-pin"></i>@Model.Settings.Adress</li>
+                                <li><i class="ti-timer"></i> @Model.Settings.WorkTime</li>
                             </ul>
                         </div>
                     </div>
@@ -66,95 +67,36 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="~/images/logo.png" alt="image"></a>
+                    <a class="navbar-brand" href="index.html"><img src="uploads/@Model.Settings.Logo" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse navbar-left navigation-holder">
                     <div class="left-separator"></div>
                     <button class="close-navbar"><i class="ti-close"></i></button>
                     <ul class="nav navbar-nav">
                         <li class="menu-item-has-children current-menu-parent">
-                            <a href="#">Home</a>
-                            <ul class="sub-menu">
-                                <li class="current-menu-item"><a href="index.html">Home style 1</a></li>
-                                <li><a href="index-2.html">Home style 2</a></li>
-                                <li><a href="index-3.html">Home style 3</a></li>
-                                <li><a href="index-4.html">Home style 4</a></li>
-                            </ul>
+                            <a asp-controller ="Home" asp-action="index">Əsas</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Pages</a>
+                            <a href="#">Səhifələrimiz</a>
                             <ul class="sub-menu">
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li><a href="awards.html">Awards</a></li>
-                                <li><a href="pricing-plan.html">Pricing plan</a></li>
+                                <li><a asp-controller="aboutus" asp-action="index">Ətraflı</a></li>
+                                <li><a  asp-controller="contact" asp-action="index">Bizimlə Əlagə</a></li>
                                 <li><a href="testimonials.html">Testimonials</a></li>
                                 <li><a href="testimonials-s2.html">Testimonials style 2</a></li>
                                 <li><a href="team.html">Team</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="404.html">404</a></li>
+                                <li><a asp-controller="faq" asp-action="index">FAQ</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Services</a>
-                            <ul class="sub-menu">
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="services-s2.html">Services style 2</a></li>
-                                <li><a href="service-single.html">Life insurance</a></li>
-                                <li><a href="car-insurance.html">Car insurance</a></li>
-                                <li><a href="home-insurance.html">Home insurance</a></li>
-                                <li><a href="health-insurance.html">Helth insurance</a></li>
-                                <li><a href="investment-plan.html">Investment plan</a></li>
-                                <li><a href="life-insurance.html">Life insurance</a></li>
-                            </ul>
+                            <a  asp-controller="service" asp-action="index">Servisimiz</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Case studies</a>
-                            <ul class="sub-menu">
-                                <li><a href="case-studies.html">Case studies</a></li>
-                                <li><a href="case-single.html">Case studies single</a></li>
-                            </ul>
+                            <a asp-controller="CaseStudies" asp-action="index">Tematik tədqiqat</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Blog</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item-has-children">
-                                    <a href="#Level3">Blog listing</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html">Right sidebar</a></li>
-                                        <li><a href="blog-left-sidebar.html">Left sidebar</a></li>
-                                        <li><a href="blog-fullwidth.html">Full width</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#Level3">Blog grid</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog-grid-2-columns.html">2 columns</a></li>
-                                        <li><a href="blog-grid-2-columns-sidebar.html">2 columns sidebar</a></li>
-                                        <li><a href="blog-grid-3-columns.html">3 columns</a></li>
-                                        <li><a href="blog-grid-4-columns.html">4 columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#Level3">Blog masonry</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog-masonry-2-columns.html">2 columns</a></li>
-                                        <li><a href="blog-masonry-2-columns-sidebar.html">2 columns sidebar</a></li>
-                                        <li><a href="blog-masonry-3-columns.html">3 columns</a></li>
-                                        <li><a href="blog-masonry-4-columns.html">4 columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#Level3">Blog single</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog-single.html">Right sidebar</a></li>
-                                        <li><a href="blog-single-left-sidebar.html">Left sidebar</a></li>
-                                        <li><a href="blog-single-full-width.html">Full width</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <a asp-controller="blog" asp-action="index">Blog</a>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a asp-controller="contact" asp-action="index">Contact</a></li>
                     </ul>
                 </div><!-- end of nav-collapse -->
 
@@ -163,7 +105,7 @@
                         <a href="#">
                             <i class="fi flaticon-feedback"></i>
                             <h5>Have any query?</h5>
-                            <span>++8891682000000</span>
+                            <span>@Model.Settings.NeedHelpNumber</span>
                         </a>
                     </div>
                     <div class="header-search-area">
@@ -223,7 +165,7 @@
                             <div class="widget-title">
                                 <h3>
                                     <span class="hidden">About us</span>
-                                    <img src="assets/images/footer-logo.png" alt="">
+                                    <img src="uploads/@Model.Settings.FooterLogo" alt="footerlogo">
                                 </h3>
                             </div>
                             <p>Showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy</p>
@@ -245,9 +187,9 @@
                             </div>
                             <ul>
                                 <li>65/15 Old norok Avenew Booston town, Austria</li>
-                                <li><span>Phone:</span> 84667441</li>
-                                <li><span>Email:</span> demo@example.com</li>
-                                <li><span>Office Time:</span> 10AM- 5PM</li>
+                                <li><span>Phone:</span> @Model.Settings.Phone</li>
+                                <li><span>Email:</span> @Model.Settings.Email</li>
+                                <li><span>Office Time:</span>@Model.Settings.OfficeTime</li>
                             </ul>
                         </div>
                     </div>
@@ -257,16 +199,17 @@
                                 <h3>Quick Links</h3>
                             </div>
                             <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our services</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Meet team</a></li>
+                                <li>
+                                    <a asp-controller="aboutus" asp-action="index">Etrafli</a>
+                                </li>
+                                <li><a asp-controller="service" asp-action="index">Our services</a></li>
+                                <li><a asp-controller="contact" asp-action="index">Contact us</a></li>
                             </ul>
                             <ul>
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Testimonials</a></li>
                                 <li><a href="#">News</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                <li><a asp-controller="faq" asp-action="index">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -277,7 +220,7 @@
                             </div>
                             <div class="content">
                                 <h4><a href="#"><i class="fi flaticon-agent"></i> Find it now</a></h4>
-                                <p>++6485757254</p>
+                                <p>@Model.Settings.NeedHelpNumber</p>
                             </div>
                         </div>
                     </div>

@@ -29,6 +29,5 @@ namespace Repository.Models
         [Required]
         [MaxLength(50)]
         public string ImgTxt { get; set; }
-        public ICollection<Setting> Settings { get; set; }
     }
 }

@@ -16,6 +16,5 @@ namespace Repository.Models
         [MaxLength(50)]
         public string Photo { get; set; }
 
-        public ICollection<Setting> Settings { get; set; }
     }
 }

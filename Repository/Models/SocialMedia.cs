@@ -14,7 +14,5 @@ namespace Repository.Models
         [MaxLength(100)]
         public string Link { get; set; }
 
-
-        public Setting Setting { get; set; }
     }
 }

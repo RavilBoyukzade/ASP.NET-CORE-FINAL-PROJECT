@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Repository.Data;
 
 namespace Repository.Migrations
 {
     [DbContext(typeof(JotexDbContext))]
-    partial class JotexDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200521131742_UpdateSettingModel")]
+    partial class UpdateSettingModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -689,6 +691,9 @@ namespace Repository.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("AboutItemId")
+                        .HasColumnType("int");
+
                     b.Property<string>("AddedBy")
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
@@ -706,13 +711,10 @@ namespace Repository.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
-                    b.Property<string>("FooterLogo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Logo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(50)")
@@ -745,6 +747,8 @@ namespace Repository.Migrations
                         .HasMaxLength(50);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AboutItemId");
 
                     b.ToTable("Settings");
                 });
@@ -911,6 +915,13 @@ namespace Repository.Migrations
                 {
                     b.HasOne("Repository.Models.AboutItem", "AboutItem")
                         .WithMany("Counters")
+                        .HasForeignKey("AboutItemId");
+                });
+
+            modelBuilder.Entity("Repository.Models.Setting", b =>
+                {
+                    b.HasOne("Repository.Models.AboutItem", null)
+                        .WithMany("Settings")
                         .HasForeignKey("AboutItemId");
                 });
 #pragma warning restore 612, 618

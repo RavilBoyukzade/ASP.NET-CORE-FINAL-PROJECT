@@ -18,8 +18,7 @@ namespace Repository.Repositories.AgentRepository
         }
         public IEnumerable<Agent> GetAgents()
         {
-            return _context.Agents.Include("Settings")
-                                  .Where(d => d.Status)
+            return _context.Agents.Where(d => d.Status)
                                   .OrderBy(d => d.OrderBy)
                                   .ToList();
         }
