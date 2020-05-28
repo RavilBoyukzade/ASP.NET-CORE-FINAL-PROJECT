@@ -1,4 +1,4 @@
-﻿
+﻿@model SingleServiceViewModel 
 @{
     ViewData["Title"] = "Service";
 }
@@ -6,3 +6,123 @@
 <partial name="Page/_Loader" />
 <partial name="Page/_Title" />
 
+<!-- start service-single-section -->
+<section class="service-single-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="service-single-tab">
+                    <ul class="nav tab-links clearfix">
+                        @foreach (var item in Model.Services)
+                        {
+                            <li>
+                                <a href="#@item.Id" data-toggle="tab">
+                                    <i class="@item.Logo"></i>
+                                    <h3>@item.Name</h3>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+
+                    <div class="tab-content">
+                        @foreach (var service in Model.Services)
+                        {
+                            <div class="tab-pane fade" id="@service.Id">
+                                <div class="content-area clearfix">
+                                    <div class="grid info-grid">
+                                        <h3>@service.Name</h3>
+                                        <p>@service.Text</p>
+                                        <p><strong>@service.Description</strong></p>
+                                        <table>
+                                            <tbody>
+                                                @foreach (var spec in service.ServiceSpecs)
+                                                {
+                                                    <tr>
+                                                        <td>@spec.Key: &ensp;</td>
+                                                        <td>@spec.Value</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="grid">
+                                        <img src="~/uploads/@service.Image" alt="">
+                                    </div>
+                                </div>
+                                <div class="bottom-info">
+                                    <div class="text">
+                                        <h4>Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of an illustrated magazine</h4>
+                                        <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather</p>
+                                    </div>
+                                    <div class="pdf-dwn-area">
+                                        <a href="#">
+                                            <i class="ti-receipt"></i>
+                                            <h5>General Insurance Conditions</h5>
+                                            <p>Document size: 34kb</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="features-grid clearfix">
+                                    <div class="grid">
+                                        <div class="icon">
+                                            <i class="fi flaticon-house"></i>
+                                        </div>
+                                        <h3>House protected</h3>
+                                        <p>Window at the dull weather</p>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="icon">
+                                            <i class="fi flaticon-umbrella-1"></i>
+                                        </div>
+                                        <h3>Helth protected</h3>
+                                        <p>Window at the dull weather</p>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="icon">
+                                            <i class="fi flaticon-cost"></i>
+                                        </div>
+                                        <h3>Small Premium</h3>
+                                        <p>Window at the dull weather</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end service-single-section -->
+<!-- start service-single-section -->
+<!-- end service-single-section -->
+<!-- start testimonials-section-s2 -->
+<section class="testimonials-section-s2 section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="section-title">
+                    <span>Testimonials</span>
+                    <h2>What People Says About Us</h2>
+                </div>
+
+                <div class="testimonials-s2-nav">
+                    <div class="slider-s2-arrows">
+                        <div class="slider-prev"><i class="fi flaticon-left-arrow-angle-big-gross-symbol"></i></div>
+                        <div class="slider-next"><i class="fi flaticon-arrow-angle-pointing-to-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="testimonials-slider-holder">
+                    <div class="testimonials-slider-s2">
+                        <vc:testimonial></vc:testimonial>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end testimonials-section-s2 -->

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<AreaViewModel>
+
+@foreach (var item in Model)
+{
+  
+        <div class="col col-xs-12">
+            <div class="inner clearfix">
+                <div class="left-col">
+                    <div class="section-title">
+                        <span>Likeable area</span>
+                        <h2>Best Life Insurance Company in the World!</h2>
+                    </div>
+                    <div class="details">
+                        <p>@item.Text</p>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="contact-info">
+                        <p>Detallarla bize zeng vurun</p>
+                        <h2>+994505431392</h2>
+                        <a href="@item.EndPoint" class="theme-btn-s3">@item.ActionText</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-xs-12">
+            <div class="video-area">
+                <div class="img-holder">
+                    <img src="~/uploads/@item.Image" alt="image">
+                    <div class="video-btns">
+                        <a href="@item.VideoLink" class="video-btn" data-type="iframe" tabindex="0"><i class="fi flaticon-play"></i></a>
+                    </div>
+                </div>
+                <div class="experience-text">
+                    <p><span>@item.Count</span>@Html.Raw(item.ImgTxt) </p>
+                </div>
+            </div>
+        </div>
+    
+}
+

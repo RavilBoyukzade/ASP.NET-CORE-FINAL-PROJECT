@@ -23,8 +23,9 @@ namespace Repository.Models
         public string EndPoint { get; set; }
         [Required]
         [MaxLength(50)]
-        public string Category { get; set; }
         public int? LabelId { get; set; }
         public Label Label { get; set; }
+
+        public ICollection<BestPlanCateg> PlanCategs { get; set; }
     }
 }

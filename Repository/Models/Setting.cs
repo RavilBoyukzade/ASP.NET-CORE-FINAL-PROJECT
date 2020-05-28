@@ -9,6 +9,8 @@ namespace Repository.Models
         [Required]
         public string FooterLogo { get; set; }
         [Required]
+        public string BalckLogo { get; set; }
+        [Required]
         [MaxLength(100)]
         public string Adress { get; set; }
         [Required]
@@ -25,7 +27,10 @@ namespace Repository.Models
         public string Email { get; set; }
         [Required]
         [MaxLength(50)]
-        public string OfficeTime { get; set; } 
-       
+        public string OfficeTime { get; set; }
+
+        public IEnumerable<AboutItem> AboutItems { get; set; }
+        public ICollection<SocialMedia> SocialMedias { get; set; }
+
     }
 }

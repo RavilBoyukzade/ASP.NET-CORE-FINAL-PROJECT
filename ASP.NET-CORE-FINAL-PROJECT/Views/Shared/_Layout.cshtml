@@ -1,4 +1,5 @@
-﻿@model SettingViewModel
+﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +32,11 @@
                     <div class="col col-md-8">
                         <div class="info">
                             <ul>
-                                <li><i class="ti-location-pin"></i>@Model.Settings.Adress</li>
-                                <li><i class="ti-timer"></i> @Model.Settings.WorkTime</li>
+                               
+                             
+                                    <li><i class="ti-location-pin"></i> Adress</li>
+                                    <li><i class="ti-timer"></i> worktime</li>
+                              
                             </ul>
                         </div>
                     </div>
@@ -67,20 +71,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="uploads/@Model.Settings.Logo" alt="image"></a>
+                    <a class="navbar-brand" href="index.html"><img src="~/uploads/logo.png" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse navbar-left navigation-holder">
                     <div class="left-separator"></div>
                     <button class="close-navbar"><i class="ti-close"></i></button>
                     <ul class="nav navbar-nav">
                         <li class="menu-item-has-children current-menu-parent">
-                            <a asp-controller ="Home" asp-action="index">Əsas</a>
+                            <a asp-controller="Home" asp-action="index">Əsas</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">Səhifələrimiz</a>
                             <ul class="sub-menu">
                                 <li><a asp-controller="aboutus" asp-action="index">Ətraflı</a></li>
-                                <li><a  asp-controller="contact" asp-action="index">Bizimlə Əlagə</a></li>
+                                <li><a asp-controller="contact" asp-action="index">Bizimlə Əlagə</a></li>
                                 <li><a href="testimonials.html">Testimonials</a></li>
                                 <li><a href="testimonials-s2.html">Testimonials style 2</a></li>
                                 <li><a href="team.html">Team</a></li>
@@ -88,7 +92,7 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a  asp-controller="service" asp-action="index">Servisimiz</a>
+                            <a asp-controller="service" asp-action="index">Servisimiz</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a asp-controller="CaseStudies" asp-action="index">Tematik tədqiqat</a>
@@ -105,7 +109,7 @@
                         <a href="#">
                             <i class="fi flaticon-feedback"></i>
                             <h5>Have any query?</h5>
-                            <span>@Model.Settings.NeedHelpNumber</span>
+                            <span>NeedHelpNumber</span>
                         </a>
                     </div>
                     <div class="header-search-area">
@@ -126,11 +130,11 @@
             </div><!-- end of container -->
         </nav>
     </header>
-    
-        
-            @RenderBody()
-        
-    
+
+
+    @RenderBody()
+
+
 
     <!-- start site-footer -->
     <footer class="site-footer">
@@ -165,7 +169,7 @@
                             <div class="widget-title">
                                 <h3>
                                     <span class="hidden">About us</span>
-                                    <img src="uploads/@Model.Settings.FooterLogo" alt="footerlogo">
+                                    <img src="~/uploads/footer-logo.png" alt="footerlogo">
                                 </h3>
                             </div>
                             <p>Showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy</p>
@@ -187,9 +191,9 @@
                             </div>
                             <ul>
                                 <li>65/15 Old norok Avenew Booston town, Austria</li>
-                                <li><span>Phone:</span> @Model.Settings.Phone</li>
-                                <li><span>Email:</span> @Model.Settings.Email</li>
-                                <li><span>Office Time:</span>@Model.Settings.OfficeTime</li>
+                                <li><span>Phone:</span> Phone</li>
+                                <li><span>Email:</span> Email</li>
+                                <li><span>Office Time:</span>OfficeTime</li>
                             </ul>
                         </div>
                     </div>
@@ -220,7 +224,7 @@
                             </div>
                             <div class="content">
                                 <h4><a href="#"><i class="fi flaticon-agent"></i> Find it now</a></h4>
-                                <p>@Model.Settings.NeedHelpNumber</p>
+                                <p>NeedHelpNumber</p>
                             </div>
                         </div>
                     </div>

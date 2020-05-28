@@ -1,6 +1,7 @@
 ﻿using ASP.NET_CORE_FINAL_PROJECT.Models;
 using AutoMapper;
 using Repository.Models;
+using System.Linq;
 
 namespace ASP.NET_CORE_FINAL_PROJECT.Mapping
 {
@@ -13,6 +14,16 @@ namespace ASP.NET_CORE_FINAL_PROJECT.Mapping
             CreateMap<Brand, BrandViewModel>();
             CreateMap<Faq, FaqViewModel>();
             CreateMap<Testimonial, TestimonialViewModel>();
+            CreateMap<Setting, SettingViewModel>();
+            CreateMap<AboutItem, AboutViewModel>();
+            CreateMap<AboutCard, AboutCardViewModel>();
+            CreateMap<Service, ServiceViewModel>();
+            CreateMap<Area, AreaViewModel>();
+            CreateMap<BestPlan, BestPlanViewModel>();
+            CreateMap<BestPlanCateg, BestPlanCategViewModel>();
+            CreateMap<Blog, BlogViewModel>();
+            CreateMap<BlogImage, BlogImageViewModel>();
+            CreateMap<BlogSlogan, BlogSloganViewModel>();
         }
     }
 }

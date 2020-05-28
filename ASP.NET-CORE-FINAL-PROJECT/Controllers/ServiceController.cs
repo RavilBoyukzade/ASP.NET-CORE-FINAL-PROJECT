@@ -1,30 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ASP.NET_CORE_FINAL_PROJECT.Models;
+﻿using ASP.NET_CORE_FINAL_PROJECT.Models;
 using Microsoft.AspNetCore.Mvc;
-using Repository.Repositories.ContentRepository;
+using Repository.Repositories.ServiceRepository;
 
 namespace ASP.NET_CORE_FINAL_PROJECT.Controllers
 {
     public class ServiceController : Controller
     {
-        private readonly IContentRepository _contentRepository;
+        private readonly IServiceRepository _serviceRepository;
 
-        public ServiceController(IContentRepository contentRepository)
+        public ServiceController(IServiceRepository serviceRepository)
         {
-            _contentRepository = contentRepository;
+            _serviceRepository = serviceRepository;
         }
         public IActionResult Index()
         {
-
-
-            var model = new SettingViewModel
+            var sservice = new SingleServiceViewModel
             {
-                Settings = _contentRepository.GetSettings()
+                Services = _serviceRepository.GetServices()
             };
-            return View(model);
+
+
+
+            return View(sservice);
         }
     }
 }

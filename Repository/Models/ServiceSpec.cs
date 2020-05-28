@@ -13,5 +13,7 @@ namespace Repository.Models
         [Required]
         [MaxLength(500)]
         public string Value { get; set; }
+
+        public Service Service { get; set; }
     }
 }

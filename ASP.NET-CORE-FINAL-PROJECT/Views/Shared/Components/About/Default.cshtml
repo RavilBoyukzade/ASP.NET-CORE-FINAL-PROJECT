@@ -1,0 +1,26 @@
+﻿@model IEnumerable<AboutViewModel>
+
+@foreach (var item in Model)
+{
+    <div class="col col-md-3">
+        <div class="section-title mt">
+            <span>About us</span>
+            <img src="~/uploads/@item.Setting.BalckLogo" alt="">
+        </div>
+        <div class="info">
+            <h3>@item.Setting.Phone</h3>
+            <h4>@item.Setting.Email</h4>
+            <a href="@item.EndPoint" class="theme-btn">@item.ActionText</a>
+        </div>
+    </div>
+    <div class="col col-md-5">
+        <div class="details-text mt">
+            <h4>@item.Description</h4>
+            <p>@item.InformText</p>
+        </div>
+    </div>
+    
+
+}
+
+

@@ -2,6 +2,7 @@
 using Repository.Models;
 using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace Repository.Data
@@ -11,7 +12,7 @@ namespace Repository.Data
         public JotexDbContext(DbContextOptions<JotexDbContext> options) : base(options) { }
 
 
-        public DbSet<AboutCard> AboutCards { get; set; }
+       public DbSet<AboutCard> AboutCards { get; set; }
         public DbSet<AboutItem> AboutItems { get; set; }
         public DbSet<Agent> Agents { get; set; }
         public DbSet<Area> Areas { get; set; }
@@ -28,5 +29,13 @@ namespace Repository.Data
         public DbSet<Testimonial>Testimonials { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet <SliderItem> SliderItems { get; set; }
+
+        public DbSet<ServiceItem> ServiceItems { get; set; }
+        public DbSet<BestPlanCateg> BestPlanCategs { get; set; }
+
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<BlogImage> BlogImages { get; set; }
+        public DbSet<BlogComment> BlogComments { get; set; }
+        public DbSet<BlogSlogan> BlogSlogans  { get; set; }
     }
 }

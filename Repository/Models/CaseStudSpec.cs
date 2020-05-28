@@ -4,14 +4,9 @@ namespace Repository.Models
 {
     public class CaseStudSpec:BaseEntity
     {
-        public int OrderBy { get; set; }
-        public int CaseStudId { get; set; }
-        [Required]
-        [MaxLength(50)]
+        public int CaseStudyId { get; set; }
         public string Key { get; set; }
-
-        [Required]
-        [MaxLength(500)]
         public string Value { get; set; }
+        public CaseStud CaseStudy { get; set; }
     }
 }

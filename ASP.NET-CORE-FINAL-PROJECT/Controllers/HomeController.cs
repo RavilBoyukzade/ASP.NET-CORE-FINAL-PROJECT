@@ -1,27 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using ASP.NET_CORE_FINAL_PROJECT.Models;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Repository.Models;
 using Repository.Repositories.ContentRepository;
+using Repository.Repositories.ServiceRepository;
+using System.Collections.Generic;
 
 namespace ASP.NET_CORE_FINAL_PROJECT.Controllers
 {
     public class HomeController : Controller
     {
         private readonly IContentRepository _contentRepository;
-        
         public HomeController(IContentRepository contentRepository)
         {
             _contentRepository = contentRepository;
         }
+
+
         public IActionResult Index()
         {
-            var model = new SettingViewModel
+            var model = new BaseViewModel
             {
-                Settings = _contentRepository.GetSettings()
-            };
+                Setting = _contentRepository.GetSettings()
+        };
+
             return View(model);
         }
     }

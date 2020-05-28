@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\Repository.csproj": {}
+    "D:\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\Repository.csproj": {
+    "D:\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\Repository.csproj",
+        "projectPath": "D:\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\obj\\",
+        "outputPath": "D:\\ASP.NET-CORE-FINAL-PROJECT\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

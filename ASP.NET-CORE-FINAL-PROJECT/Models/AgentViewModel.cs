@@ -13,7 +13,6 @@ namespace ASP.NET_CORE_FINAL_PROJECT.Models
         public string Position { get; set; }
         
         public string Photo { get; set; }
-
-        public IList<Setting> Settings { get; set; }
+        public SettingViewModel Setting { get; set; }
     }
 }
