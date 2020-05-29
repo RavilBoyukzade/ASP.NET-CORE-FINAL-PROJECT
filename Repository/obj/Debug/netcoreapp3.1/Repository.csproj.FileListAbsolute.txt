@@ -10,7 +10,6 @@ C:\Users\Lenovo\Desktop\ASP.NET-CORE-FINAL-PROJECT\Repository\obj\Debug\netcorea
 D:\ASP.NET-CORE-FINAL-PROJECT\Repository\bin\Debug\netcoreapp3.1\Repository.deps.json
 D:\ASP.NET-CORE-FINAL-PROJECT\Repository\bin\Debug\netcoreapp3.1\Repository.dll
 D:\ASP.NET-CORE-FINAL-PROJECT\Repository\bin\Debug\netcoreapp3.1\Repository.pdb
-D:\ASP.NET-CORE-FINAL-PROJECT\Repository\obj\Debug\netcoreapp3.1\Repository.csprojAssemblyReference.cache
 D:\ASP.NET-CORE-FINAL-PROJECT\Repository\obj\Debug\netcoreapp3.1\Repository.csproj.CoreCompileInputs.cache
 D:\ASP.NET-CORE-FINAL-PROJECT\Repository\obj\Debug\netcoreapp3.1\Repository.AssemblyInfoInputs.cache
 D:\ASP.NET-CORE-FINAL-PROJECT\Repository\obj\Debug\netcoreapp3.1\Repository.AssemblyInfo.cs
