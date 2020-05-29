@@ -19,6 +19,7 @@ namespace Repository.Data
         public DbSet<BestPlan> BestPlans { get; set; }
         public DbSet<CaseStud> CaseStuds { get; set; }
         public DbSet<CaseStudSpec> CaseStudSpecs { get; set; }
+        public DbSet<CaseStudCollapse> CaseStudCollapses { get; set; }
         public DbSet<CounterItem> CounterItems { get; set; }
         public DbSet<Faq> Faqs { get; set; }
         public DbSet<Label> Labeles { get; set; }
@@ -37,5 +38,7 @@ namespace Repository.Data
         public DbSet<BlogImage> BlogImages { get; set; }
         public DbSet<BlogComment> BlogComments { get; set; }
         public DbSet<BlogSlogan> BlogSlogans  { get; set; }
+
+       
     }
 }

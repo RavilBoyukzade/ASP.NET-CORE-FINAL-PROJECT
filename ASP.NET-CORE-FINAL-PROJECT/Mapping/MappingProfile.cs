@@ -24,6 +24,9 @@ namespace ASP.NET_CORE_FINAL_PROJECT.Mapping
             CreateMap<Blog, BlogViewModel>();
             CreateMap<BlogImage, BlogImageViewModel>();
             CreateMap<BlogSlogan, BlogSloganViewModel>();
+            CreateMap<CaseStud, CaseStudViewModel>();
+            CreateMap<CaseStudCollapse, CaseStudCollapseViewModel>();
+            CreateMap<CaseStudSpec, CaseStudSpecViewModel>();
         }
     }
 }

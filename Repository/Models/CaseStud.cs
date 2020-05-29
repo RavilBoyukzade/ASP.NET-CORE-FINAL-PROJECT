@@ -15,23 +15,18 @@ namespace Repository.Models
         public string Insurance { get; set; }
         [Required]
         [MaxLength(50)]
-        public string MainTitle { get; set; }
+        public string InsuranceProfile { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string Title { get; set; }
         [Required]
         [MaxLength(100)]
-        public string Title { get; set; }
+        public string Description { get; set; }
         [Required]
         [MaxLength(500)]
         public string Text { get; set; }
-        [Required]
-        [MaxLength(500)]
-        public string ChallengeText { get; set; }
-        [Required]
-        [MaxLength(500)]
-        public string SolutionText { get; set; }
-        [Required]
-        [MaxLength(500)]
-        public string ResultText { get; set; }
         public ICollection<CaseStudSpec> CaseStudSpecs  { get; set; }
+        public ICollection<CaseStudCollapse> CaseStudCollapses  { get; set; }
 
     }
 }

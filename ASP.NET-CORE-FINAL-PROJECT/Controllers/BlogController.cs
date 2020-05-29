@@ -12,24 +12,17 @@ namespace ASP.NET_CORE_FINAL_PROJECT.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IServiceRepository _serviceRepository;
-        private readonly IContentRepository _contentRepository;
         
         public BlogController(IMapper mapper,
-                              IServiceRepository serviceRepository,
-                              IContentRepository contentRepository)
+                              IServiceRepository serviceRepository)
         {
             _mapper = mapper;
             _serviceRepository = serviceRepository;
-            _contentRepository = contentRepository;
         }
         
         public IActionResult Index()
         {
-            var baseView = new BaseViewModel
-            {
-                Setting = _contentRepository.GetSettings()
-            };
-            return View(baseView);
+            return View();
         }
 
         public IActionResult BlogSingle(int id)

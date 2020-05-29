@@ -1,0 +1,16 @@
+﻿@model IEnumerable<CaseStudViewModel>
+
+@foreach (var item in Model)
+{
+    <div class="grid">
+        <div class="img-holder">
+            <img src="~/uploads/@item.Image" alt="@item.Image">
+        </div>
+        <div class="overlay">
+            <div class="content">
+                <p class="cat">@item.Insurance</p>
+                <h3><a asp-controller="CaseStudies" asp-action="CaseSingle" asp-route-id="@item.Id">@item.InsuranceProfile</a></h3>
+            </div>
+        </div>
+    </div>
+}

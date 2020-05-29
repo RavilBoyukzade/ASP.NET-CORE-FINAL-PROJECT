@@ -1,7 +1,101 @@
-﻿
+﻿@model CaseStudViewModel
 @{
     ViewData["Title"] = "CaseSingle";
 }
+<partial name="Page/_Title" />
 
-<h2>CaseSingle</h2>
+<!-- start project-single-section -->
+<section class="project-single-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-6">
+                <div class="img-holder">
+                    <img src="~/uploads/@Model.Image" alt="@Model.Image">
+                </div>
+            </div>
+            <div class="col col-md-6">
+                <div class="project-details">
+                    <h2>@Model.Title</h2>
+                    <h3>@Model.Description</h3>
+                    <p>@Model.Text</p>
+                    <div class="project-info">
+                        @*<ul class="clearfix">
 
+                            @foreach (var item in Model.StudSpecs)
+                            {
+                                <li><span>@item.Key:&ensp;</span>@item.Value</li>
+                            }
+                        </ul>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="project-single-tab clearfix">
+                    @*<ul class="nav">
+                        @foreach (var collapse in Model.StudCollapses)
+                        {
+                            <li>
+                                <a href="#@collapse.Id" data-toggle="tab">@collapse.Title</a>
+                            </li>
+                        }
+
+                    </ul>
+
+                    <div class="tab-content">
+                        @foreach (var spec in Model.StudCollapses)
+                        {
+                            <div class="tab-pane fade in active" id="@spec.Id">
+                                <p>@spec.Text</p>
+                            </div>
+                        }
+                    </div>*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="related-case-studies">
+                    <h2>Related Case Studies</h2>
+                    <div class="case-studies-grids">
+                        <div class="grid">
+                            <div class="img-holder">
+                                <img src="assets/images/case-studies/img-1.jpg" alt="">
+                            </div>
+                            <div class="overlay">
+                                <div class="content">
+                                    <p class="cat">Insurance</p>
+                                    <h3><a href="#">Life insurance</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="img-holder">
+                                <img src="assets/images/case-studies/img-2.jpg" alt="">
+                            </div>
+                            <div class="overlay">
+                                <div class="content">
+                                    <p class="cat">Insurance</p>
+                                    <h3><a href="#">Life insurance</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="img-holder">
+                                <img src="assets/images/case-studies/img-3.jpg" alt="">
+                            </div>
+                            <div class="overlay">
+                                <div class="content">
+                                    <p class="cat">Insurance</p>
+                                    <h3><a href="#">Life insurance</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end project-single-section -->
