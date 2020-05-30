@@ -323,3 +323,4 @@ D:\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1
 D:\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Blog\Default.cshtml.g.cs
 D:\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Blog\BlogSingle.cshtml.g.cs
 D:\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CaseStudComponent\Default.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\ASP.NET-CORE-FINAL-PROJECT\bin\Debug\netcoreapp3.1\CryptoHelper.dll

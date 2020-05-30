@@ -3,14 +3,6 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "twitter-bootstrap@4.5.0",
-      "destination": "wwwroot/lib/twitter-bootstrap/",
-      "files": [
-        "js/bootstrap.min.js",
-        "css/bootstrap.min.css"
-      ]
-    },
-    {
       "library": "Chart.js@2.9.3",
       "destination": "wwwroot/lib/Chart.js/"
     },
@@ -29,6 +21,22 @@
     {
       "library": "jquery-easing@1.4.1",
       "destination": "wwwroot/lib/jquery-easing/"
+    },
+    {
+      "library": "twitter-bootstrap@4.5.0",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "library": "jquery-validate@1.19.1",
+      "destination": "wwwroot/lib/jquery-validate/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "library": "jquery-confirm@3.3.4",
+      "destination": "wwwroot/lib/jquery-confirm/"
     }
   ]
 }

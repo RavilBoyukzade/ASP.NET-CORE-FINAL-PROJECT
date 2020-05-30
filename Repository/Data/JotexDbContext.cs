@@ -39,6 +39,8 @@ namespace Repository.Data
         public DbSet<BlogComment> BlogComments { get; set; }
         public DbSet<BlogSlogan> BlogSlogans  { get; set; }
 
-       
+        public DbSet<Admin> Admins { get; set; }
+
+
     }
 }

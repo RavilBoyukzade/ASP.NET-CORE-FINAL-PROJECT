@@ -143,3 +143,8 @@ D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Admin.csproj.CoreCom
 D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Admin.MvcApplicationPartsAssemblyInfo.cache
 D:\ASP.NET-CORE-FINAL-PROJECT\Admin\bin\Debug\netcoreapp3.1\libman.json
 D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\bin\Debug\netcoreapp3.1\CryptoHelper.dll
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Index.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Create.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Update.cshtml.g.cs

@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "tZug6WEbFcLRb4iw5hwS9WmuVmv08WH4eyR1N/q5R3jBqZhDQnV5Kjnu9QoBIlE6tXUWRnttH7DpFbUo6pwnPA==",
+  "dgSpecHash": "BO9Z5ClrOiuHlO6Fjsg/IcpscJR3xXNZILNmbjO633DBa6SgBQJCQnb5GslZFYzPukIjGJmIwKiAFMen19vG4g==",
   "success": true,
   "projectFilePath": "D:\\ASP.NET-CORE-FINAL-PROJECT\\ASP.NET-CORE-FINAL-PROJECT\\ASP.NET-CORE-FINAL-PROJECT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\cryptohelper\\3.0.2\\cryptohelper.3.0.2.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.0.1\\microsoft.aspnetcore.cryptography.internal.2.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\2.0.1\\microsoft.aspnetcore.cryptography.keyderivation.2.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
