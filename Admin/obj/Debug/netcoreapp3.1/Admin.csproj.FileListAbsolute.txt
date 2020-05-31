@@ -148,3 +148,9 @@ D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Dashboar
 D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Index.cshtml.g.cs
 D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Create.cshtml.g.cs
 D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Update.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Testimonial\Index.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Testimonial\Create.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Testimonial\Update.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Create.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Edit.cshtml.g.cs
+D:\ASP.NET-CORE-FINAL-PROJECT\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Index.cshtml.g.cs

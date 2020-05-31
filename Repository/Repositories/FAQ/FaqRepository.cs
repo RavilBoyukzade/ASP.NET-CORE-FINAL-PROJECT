@@ -53,7 +53,7 @@ namespace Repository.Repositories.FAQ
             faqToUpdate.Question = model.Question;
             faqToUpdate.Answer = model.Answer;
             faqToUpdate.ModifiedBy = model.ModifiedBy;
-            faqToUpdate.ModifiedDate = DateTime.Now;
+            faqToUpdate.ModifiedDate = model.ModifiedDate;
 
             _context.SaveChanges();
         }

@@ -19,7 +19,24 @@ namespace Repository.Repositories.ContentRepository
             _context = context;
         }
 
-       
+        public Testimonial CreateTestimonial(Testimonial model)
+        {
+            model.AddedDate = DateTime.Now;
+            _context.Testimonials.Add(model);
+            _context.SaveChanges();
+            return model;
+        }
+
+        public void DeleteTestimonial(Testimonial testimonial)
+        {
+            _context.Remove(testimonial);
+            _context.SaveChanges();
+        }
+
+        public IEnumerable<Testimonial> GetAllTestimonials()
+        {
+            return _context.Testimonials.ToList();
+        }
 
         public IEnumerable<Brand> GetBrands()
         {
@@ -55,9 +72,28 @@ namespace Repository.Repositories.ContentRepository
                                        .ToList();
         }
 
+        public Testimonial GetTestimonialById(int id)
+        {
+            return _context.Testimonials.Find(id);
+        }
+
         public IEnumerable<Testimonial> GetTestimonials()
         {
-            return _context.Testimonials.OrderByDescending(t => t.AddedDate).ToList();
+            return _context.Testimonials.Where(s=>s.Status)
+                                        .OrderByDescending(t => t.AddedDate)
+                                        .ToList();
+        }
+
+        public void UpdateTestimonial(Testimonial TestimonialToUpdate, Testimonial model)
+        {
+            TestimonialToUpdate.Status = model.Status;
+            TestimonialToUpdate.Text = model.Text;
+            TestimonialToUpdate.Name = model.Name;
+            TestimonialToUpdate.Position = model.Position;
+            TestimonialToUpdate.ModifiedBy = model.ModifiedBy;
+            TestimonialToUpdate.ModifiedDate = model.ModifiedDate;
+
+            _context.SaveChanges();
         }
     }
 }

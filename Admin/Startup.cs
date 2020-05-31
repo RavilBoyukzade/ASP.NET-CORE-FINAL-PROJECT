@@ -12,7 +12,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Repository.Data;
 using Repository.Repositories.AdminRepository;
+using Repository.Repositories.BlogRepository;
+using Repository.Repositories.ContentRepository;
 using Repository.Repositories.FAQ;
+using Repository.Repositories.ServiceRepository;
 
 namespace Admin
 {
@@ -38,6 +41,13 @@ namespace Admin
 
             services.AddTransient<IAdminRepository, AdminRepository>();
             services.AddTransient<IFaqRepository, FaqRepository>();
+            services.AddTransient<IContentRepository, ContentRepository>();
+            services.AddTransient<IBlogRepository, BlogRepository>();
+            services.AddTransient<IBlogPhotosRepository, BlogPhotosRepository>();
+            services.AddTransient<IBlogCommentsRepository, BlogCommentsRepository>();
+            services.AddTransient<IBlogSloganRepository, BlogSloganRepository>();
+            services.AddTransient<IServiceRepository, ServiceRepository>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -25,7 +25,7 @@ namespace Admin.Controllers
         }
         public IActionResult Index()
         {
-            var faq = _faqRepository.GetFaqs();
+            var faq = _faqRepository.GetAllFaqs();
             var model = _mapper.Map<IEnumerable<Faq>, IEnumerable<FaqViewModel>>(faq);
 
             return View(model);
@@ -66,6 +66,7 @@ namespace Admin.Controllers
             {
                 Faq model = _mapper.Map<FaqViewModel, Faq>(faq);
                 model.ModifiedBy = "System";
+                model.ModifiedDate = DateTime.Now;
                 Faq faqToUpdate = _faqRepository.GetFaqById(faq.Id);
                 if (faqToUpdate == null) return NotFound();
                 _faqRepository.UpdateFaq(faqToUpdate, model);
